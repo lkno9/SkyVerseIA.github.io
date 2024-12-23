@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="brushGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A202C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="splashGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#9F7AEA;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#9F7AEA;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="600" cy="600" r="570" fill="url(#brushGradient)" stroke="#9F7AEA" stroke-width="8"/>
+  
+  <!-- Paint Splash Effect -->
+  <path d="M300 600 C300 400, 500 300, 600 300 C700 300, 900 400, 900 600 C900 800, 700 900, 600 900 C500 900, 300 800, 300 600Z" 
+        fill="url(#splashGradient)" 
+        opacity="0.6"/>
+
+  <!-- Main Brush -->
+  <g transform="translate(600 600) rotate(-45) translate(-600 -600)">
+    <!-- Brush Handle -->
+    <path d="M750 350 L900 200" 
+          stroke="#9F7AEA" 
+          stroke-width="40" 
+          stroke-linecap="round"/>
+    
+    <!-- Brush Head -->
+    <path d="M450 650 Q600 500 750 350" 
+          stroke="#9F7AEA" 
+          stroke-width="60" 
+          stroke-linecap="round"
+          fill="none"/>
+    
+    <!-- Brush Bristles -->
+    <g stroke="#9F7AEA" stroke-width="3">
+      <path d="M460 640 Q500 600 540 560" />
+      <path d="M480 620 Q520 580 560 540" />
+      <path d="M500 600 Q540 560 580 520" />
+      <path d="M520 580 Q560 540 600 500" />
+      <path d="M540 560 Q580 520 620 480" />
+      <path d="M560 540 Q600 500 640 460" />
+      <path d="M580 520 Q620 480 660 440" />
+      <path d="M600 500 Q640 460 680 420" />
+      <path d="M620 480 Q660 440 700 400" />
+      <path d="M640 460 Q680 420 720 380" />
+    </g>
+  </g>
+
+  <!-- Paint Drops -->
+  <g fill="#9F7AEA">
+    <circle cx="400" cy="700" r="20" />
+    <circle cx="450" cy="800" r="15" />
+    <circle cx="750" cy="500" r="25" />
+    <circle cx="800" cy="600" r="18" />
+    <circle cx="600" cy="400" r="22" />
+  </g>
+
+  <!-- Paint Strokes -->
+  <g stroke="#9F7AEA" stroke-linecap="round">
+    <path d="M350 650 Q400 630 450 650" stroke-width="12" />
+    <path d="M750 450 Q800 430 850 450" stroke-width="10" />
+    <path d="M550 350 Q600 330 650 350" stroke-width="14" />
+  </g>
+
+  <!-- Decorative Elements -->
+  <g stroke="#9F7AEA" stroke-width="2" opacity="0.6">
+    <circle cx="300" cy="600" r="8" />
+    <circle cx="900" cy="600" r="8" />
+    <circle cx="600" cy="300" r="8" />
+    <circle cx="600" cy="900" r="8" />
+  </g>
+
+  <!-- Artistic Swirls -->
+  <g stroke="#9F7AEA" stroke-width="3" fill="none">
+    <path d="M350 500 C400 450, 450 450, 500 500" />
+    <path d="M700 700 C750 750, 800 750, 850 700" />
+    <path d="M500 800 C550 850, 600 850, 650 800" />
+  </g>
+</svg>
